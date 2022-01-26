@@ -7,6 +7,19 @@ Author URL: http://w3layouts.com
 
 <head>
   <!-- Required meta tags -->
+  <!-- Global site tag (gtag.js) - Google Ads: 10809676601 -->
+  <script async src=""https://www.googletagmanager.com/gtag/js?id=AW-10809676601""></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10809676601');
+  </script>
+  <!-- Event snippet for Lead Form - New conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Galaxy Kint Exports | Home Page</title>
@@ -15,7 +28,20 @@ Author URL: http://w3layouts.com
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
-
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-10809676601/C0R6CO3W2pIDELmmuqIo',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
 <body>
   <!--header-->
   <header id="site-header" class="fixed-top">
